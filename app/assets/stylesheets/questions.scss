@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap');
+
+// Defining a variable
+$gray: #C0BDBD;
+
+body {
+  background: white; // Using this variable
+  font-family: Montserrat;
+}
+
+.container {
+  margin: 30px;
+  width: 500px;
+}
+
+.row {
+  display: flex;
+}
+
+.btn {
+  background-color: #337AB7;
+  color: white;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: solid 1px #337AB7;
+  width: 60px;
+}
+
+.search-bar {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: solid 1px #A2A2A1;
+  border-right-color: white;
+  width: 400px;
+  height: 40px;
+}

@@ -1,0 +1,39 @@
+<div class="container">
+  <h1>Stupid Coaching</h1>
+
+  <% def coach_answer(your_message)
+    your_message = params[:question]
+
+    if your_message.downcase == "i am going to work right now!"
+      "Great!"
+    elsif your_message.end_with?("?")
+      "Silly question, get dressed and go to work!"
+    else
+      "I don't care, get dressed and go to work!"
+    end
+  end
+
+  def coach_answer_enhanced(your_message)
+    your_message = params[:question]
+
+    answer = coach_answer(your_message)
+    if answer != ""
+      if your_message.upcase == your_message
+        "I can feel your motivation! #{answer}"
+      else
+        answer
+      end
+    else
+      ""
+    end
+  end %>
+
+  <div class="me">
+    <p><%= params[:question] %></p>
+    <p>- You</p>
+  </div>
+  <div class="coach">
+    <p><%= coach_answer_enhanced(params[:question]) %></p>
+    <p>- Coach</p>
+  </div>
+</div>

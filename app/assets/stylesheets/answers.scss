@@ -1,0 +1,25 @@
+ // Defining a variable
+$gray: #C0BDBD;
+
+body {
+  background: black; // Using this variable
+  font-family: Monserrat;
+}
+
+.container {
+  margin: 30px;
+  width: 500px;
+}
+
+.coach {
+  margin: 20px 0px;
+  padding: 20px;
+  background-color: #FEFFE1;
+  border-left: 4px solid #D5D3D7;
+}
+
+.me {
+  margin: 20px 0px;
+  padding: 20px;
+  border-left: 4px solid #D5D3D7;
+}
